@@ -1,0 +1,145 @@
+
+.wrapper {
+    height: 100%;
+    padding: 0 24px 34px;
+    background-color: #00408C;
+    position: relative;
+    line-height: 1.428571429;
+}
+
+.header {
+    height: 57px;
+    -ms-box-orient: horizontal;
+    display: -moz-flex;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header .title {
+    -ms-box-orient: horizontal;
+    display: -moz-flex;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .wrapper .header .header-left {
+        margin-right: 0;
+    }
+}
+kv-kitchen-page .header .header-left, kv-kitchen-page .header .header-right {
+    margin: 0;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+    .header .header-left {
+        width: 50% !important;
+        margin-right: 12px;
+    }
+}
+.header .header-left {
+    padding: 0 16px;
+    -ms-box-orient: horizontal;
+    display: -moz-flex;
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.header .header-left .kv-tabs {
+    width: auto;
+    padding-top: 0;
+}
+
+.header-right{
+    width: 100%;
+    padding-left: 15px;
+}
+
+.header-right ul {
+    list-style-type: none;
+    padding: 0;        
+    margin: 0;
+    display: flex;  
+}
+
+.header-right li {
+    width: 32px;   
+    height: 32px; 
+    margin-left: 4px;  
+    padding: 0;         
+    display: flex;       
+    align-items: center;  
+    justify-content: center; 
+    border-radius: 50%;   
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: background-color 0.3s; 
+}
+
+.header-right li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.header-right li a:hover {
+    color: #0066CC;
+}
+
+.nav-tabs {
+    background-color: #00408C;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.nav-tabs .nav-link {
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: inherit;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0066CC;
+    background-color: white;
+    border: 1px solid #0066CC;
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-link:not(.active) {
+    opacity: 0.65;
+    background-color: #0066CC;
+}
+
+.tab-content {
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+    height: calc(100% - 42px);
+    background-color: white;
+    padding-top: 15px;
+}
+
+#modalDialog {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    cursor: move;
+}
